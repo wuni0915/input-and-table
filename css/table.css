@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* 관리자 페이지 영역 */
+.admin {
+  width: 1000px;
+  /* background-color: aqua; */
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.admin h2 {
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+/* 표 */
+
+table {
+  background-color: #fff;
+  /* 테두리가 겹치는것을 하나로 합침 */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+thead {
+    background-color: #333;
+    color: #fff;
+}
+
+/* 데이터 행에 마우스를 호버했을때 */
+tbody tr:hover {
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+/* 모든 tr이 되는게 아니라 호버 된 tr이 변한다 */
+
+/* 배송완료 */
+.complete {
+    font-weight: bold;
+    color: green;
+}
+/* 배송중 */
+.delivery {
+    font-weight: bold;
+    color: blue;
+}
+/* 배송준비 */
+.ready {
+    font-weight: bold;
+    color: orange;
+}

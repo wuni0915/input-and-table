@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form-tag</title>
+  </head>
+  <body>
+    <!-- <form action=""></form> 받아올 데이터가 없어서 액션은 지울거다. 백엔드 들어갈때 배움 -->
+    <form>
+      <!-- 글자를 입력 -->
+      <input type="text" placeholder="ID" />
+      <!-- "텍스트" 아이디 라던지 이름을 입력한다/ placeholder = 무슨 칸인지 알려주는 곳/ 인라인이다 -->
+      <!-- 비밀번호 입력 -->
+      <input type="password" placeholder="password" required />
+      <input type="email" placeholder="email" />
+      <!-- 전화번호 입력 -->
+      <input type="tel" placeholder="010-0000-0000" />
+      <input type="number" min="1" max="10" placeholder="number" />
+      <!-- min="" 타입 넘버의 최소값 max = 최대값 -->
+      <!-- 인터넷 주소 입력 -->
+      <input type="url" placeholder="http://example.com" />
+      <input type="search" placeholder="search" />
+      <!-- 네모 : 여러개 선택 가능 -->
+      <input type="checkbox" checked/>
+      <input type="checkbox" />
+      <input type="checkbox" />
+      <!-- 동그라미 : 하나만 선택 가능/ 남성, 여성 이런식 -->
+      <input type="radio" name="gender" />
+      <input type="radio" name="gender" />
+      <input type="radio" name="gender" />
+      <!-- ⭐⭐  name="동일한 이름" 으로 해주어야 하나만 선택이 가능하다/ 데이터를 전송할때 사용하는 네임이 되기도 한다.-->
+      <!-- file 선택 -->
+      <input type="file" />
+      <!-- 파일 업로드용/ 자료 제출 할때 자주 쓰이는것 -->
+      <!-- 그냥 인풋의 버튼(눌러도 아무 이상 없음) -->
+      <input type="button" value="로그인" />
+      <button type="button">제출</button>
+      <!-- ⭐"폼안에 버튼"은 서브밋, 제출하는 기능이 있다. 보통 이 버튼태그의 버튼 타입으로 한다.  -->
+      <!-- 사진 모양의 버튼 -->
+      <input type="image" src="구글.png" />
+      <!-- src="" 주소 적는 공간/ 이미지로 제출하는 기능을 한다.  -->
+      <input type="hidden" />
+      <!-- 화면에 안보이지만 몰래 값을 저장하는 칸/ 정보에 관련된 사람들만 볼 수 있는 영역 -->
+      <input type="date" />
+      <!-- 날짜 선택 -->
+      <input type="datetime-local" />
+      <!-- 날짜랑 시간을 같이 선택 -->
+      <input type="month" />
+      <!-- 연도와 월을 선택 -->
+      <input type="week" />
+      <!-- 몇번째 주 선택 -->
+      <input type="time" />
+      <!-- 시간선택 -->
+       <!-- ---------------------------------------------- -->
+      <input type="range" />
+      <!-- 막대를 움직여서 값 선택 -->
+       <input type="color">
+       <!-- 색 선택 -->
+        <textarea name="" id=""></textarea>
+        <!-- 글쓰기 text area -->
+    </form>
+  </body>
+</html>

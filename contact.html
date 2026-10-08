@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>문의하기</title>
+    <link rel="stylesheet" href="css/contact.css">
+  </head>
+  <body>
+    <!-- 수업내용 -->
+    <!-- 이름이라는 타이틀을 눌러 이름 인풋이 활성화 되게 한다 (for 과 id를 동일 하게 한다)⭐ -->
+
+    <!-- 문의하기 영역 -->
+    <form action="" class="contact-form">
+      <!-- 제목 -->
+      <h2>문의하기</h2>
+      <!-- 이름 ⭐-->
+      <label for="name">이름</label>
+      <input type="text" placeholder="이름을 입력하세요" id="name" />
+      <!-- email -->
+      <label for="email">이메일</label>
+      <input type="text" placeholder="이메일을 입력하세요" id="email" />
+      <!-- 문의 유형 -->
+      <label for="category">문의 유형</label>
+      <select name="" id="category">
+        <option>문의 유형을 선택해주세요</option>
+        <option>상품 문의</option>
+        <option>배송 문의</option>
+        <option>환불 문의</option>
+        <option>기타 문의</option>
+      </select>
+      <!-- 문의 내용 -->
+       <label for="message">문의 내용</label>
+       <textarea name="" id="message" placeholder="문의 내용을 입력하세요."></textarea>
+       <!-- submit button -->
+        <button type="submit">문의하기</button>
+    </form>
+  </body>
+</html>

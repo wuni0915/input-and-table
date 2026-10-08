@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>주문관리</title>
+    <link rel="stylesheet" href="css/table.css">
+  </head>
+  <body>
+    <!-- table = 표 전체
+     thead = 표 제목 영역
+     tbody = 표 실제 데이터 (내용)영역
+     tr = 가로 한줄
+     th =테이블 헤드
+     tb = 테이블 바디 -->
+     
+    <!-- 관리자 페이지 -->
+    <div class="admin">
+      <!-- 제목 -->
+      <h2>주문 관리</h2>
+      <!-- 주문 목록 테이블 -->
+      <table>
+        <!-- 표의 제목 영역 -->
+         <thead>
+            <tr>
+                <th>주문번호</th>
+                <th>고객명</th>
+                <th>상품명</th>
+                <th>수량</th>
+                <th>금액</th>
+                <th>주문상태</th>
+                <!-- <th></th> 제목의 칸 -->
+            </tr>
+            <!-- <tr></tr>=테이블의 로우/ 가로 한줄이란 뜻 -->
+         </thead>
+        <!-- 표의 실제 데이터 영역 -->
+         <tbody>
+            <!-- 첫번째 주문 -->
+            <tr>
+                <td>1001</td>
+                <td>복숭이</td>
+                <td>개껌</td>
+                <td>100</td>
+                <td>300,000원</td>
+                <td class="complete">배송완료</td>
+                <!-- td = 테이블의 데이터 -->
+            </tr>
+            <!-- 두번째주문 -->
+            <tr>
+                <td>1002</td>
+                <td>홍길동</td>
+                <td>아버지</td>
+                <td>1</td>
+                <td>1,111원</td>
+                <td class="delivery">누락</td>
+                <!-- td = 테이블의 데이터 -->
+            </tr>
+            <!-- 세번째주문 -->
+
+            <tr>
+                <td>1003</td>
+                <td>이수진</td>
+                <td>노트북 받침대</td>
+                <td>1</td>
+                <td>35,000원</td>
+                <td class="ready">상품준비중</td>
+                <!-- td = 테이블의 데이터 -->
+            </tr>
+            <!-- 네번째주문 -->
+            <tr>
+                <td>1004</td>
+                <td>외계인</td>
+                <td>사람</td>
+                <td>25</td>
+                <td>3,000원</td>
+                <td class="complete">배송완료</td>
+                <!-- td = 테이블의 데이터 -->
+            </tr>
+         </tbody>
+      </table>
+    </div>
+  </body>
+</html>
